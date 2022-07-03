@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Document</title>
+</head>
+<body>
+		
+		<table border="1">
+			<tr>
+				<th>#Sl. No.</th>
+				<th>Subject Name</th>
+				<th>Subject Code</th>
+				<th>Theory Mark</th>
+				<th>Practical Mark</th>
+				<th>Total Mark</th>
+				<th>Grade</th>
+				<th>Point</th>
+				<th>Action</th>
+			</tr>
+			<tr>
+				<td>01</td>
+				<td>Bangla 1st Paper</td>
+				<td>1001</td>
+				<td><input type="text" id="tm"></td>
+				<td><input type="text" id="pm"></td>
+				<td><input type="text" id="ttm"></td>
+				<td><input type="text" id="grade"></td>
+				<td><input type="text" id="point"></td>
+				<td><input type="button" value="Get Result" onclick="result()"></td>
+			</tr>
+			<tr>
+				<td>02</td>
+				<td>Bangla 2nd Paper</td>
+				<td>1002</td>
+				<td><input type="text" id="tm1"></td>
+				<td><input type="text" id="pm1"></td>
+				<td><input type="text" id="ttm1"></td>
+				<td><input type="text" id="grade1"></td>
+				<td><input type="text" id="point1"></td>
+				<td><input type="button" value="Get Result" onclick="result1()"></td>
+			</tr>
+			<tr>
+				<td>03</td>
+				<td>English 1st Paper</td>
+				<td>1003</td>
+				<td><input type="text" id="tm2"></td>
+				<td><input type="text" id="pm2"></td>
+				<td><input type="text" id="ttm2"></td>
+				<td><input type="text" id="grade2"></td>
+				<td><input type="text" id="point2"></td>
+				<td><input type="button" value="Get Result" onclick="result2()"></td>
+			</tr>
+			<tr>
+				<td>04</td>
+				<td>English 2nd Paper</td>
+				<td>1004</td>
+				<td><input type="text" id="tm3"></td>
+				<td><input type="text" id="pm3"></td>
+				<td><input type="text" id="ttm3"></td>
+				<td><input type="text" id="grade3"></td>
+				<td><input type="text" id="point3"></td>
+				<td><input type="button" value="Get Result" onclick="result3()"></td>
+			</tr>
+			<tr>
+				<td>05</td>
+				<td>General Math</td>
+				<td>1005</td>
+				<td><input type="text" id="tm4"></td>
+				<td><input type="text" id="pm4"></td>
+				<td><input type="text" id="ttm4"></td>
+				<td><input type="text" id="grade4"></td>
+				<td><input type="text" id="point4"></td>
+				<td><input type="button" value="Get Result" onclick="result4()"></td>
+			</tr>
+			<tr>
+				<td>06</td>
+				<td>Higher Math</td>
+				<td>1005</td>
+				<td><input type="text" id="tm5"></td>
+				<td><input type="text" id="pm5"></td>
+				<td><input type="text" id="ttm5"></td>
+				<td><input type="text" id="grade5"></td>
+				<td><input type="text" id="point5"></td>
+				<td><input type="button" value="Get Result" onclick="result5()"></td>
+			</tr>
+			<tr>
+				<td>07</td>
+				<td>Physics</td>
+				<td>1007</td>
+				<td><input type="text" id="tm6"></td>
+				<td><input type="text" id="pm6"></td>
+				<td><input type="text" id="ttm6"></td>
+				<td><input type="text" id="grade6"></td>
+				<td><input type="text" id="point6"></td>
+				<td><input type="button" value="Get Result" onclick="result6()"></td>
+			</tr>
+			<tr>
+				<td>08</td>
+				<td>Chemistry</td>
+				<td>1008</td>
+				<td><input type="text" id="tm7"></td>
+				<td><input type="text" id="pm7"></td>
+				<td><input type="text" id="ttm7"></td>
+				<td><input type="text" id="grade7"></td>
+				<td><input type="text" id="point7"></td>
+				<td><input type="button" value="Get Result" onclick="result7()"></td>
+			</tr>
+			<tr>
+				<td>09</td>
+				<td>Religion</td>
+				<td>1009</td>
+				<td><input type="text" id="tm8"></td>
+				<td><input type="text" id="pm8"></td>
+				<td><input type="text" id="ttm8"></td>
+				<td><input type="text" id="grade8"></td>
+				<td><input type="text" id="point8"></td>
+				<td><input type="button" value="Get Result" onclick="result8()"></td>
+			</tr>
+			<tr>
+				<td>10</td>
+				<td>Sociology</td>
+				<td>1010</td>
+				<td><input type="text" id="tm9"></td>
+				<td><input type="text" id="pm9"></td>
+				<td><input type="text" id="ttm9"></td>
+				<td><input type="text" id="grade9"></td>
+				<td><input type="text" id="point9"></td>
+				<td><input type="button" value="Get Result" onclick="result9()"></td>
+			</tr>
+			<!-- 4th subject -->
+			<tr>
+				<td>11</td>
+				<td>Biology</td>
+				<td>1011</td>
+				<td><input type="text" id="tm10"></td>
+				<td><input type="text" id="pm10"></td>
+				<td><input type="text" id="ttm10"></td>
+				<td><input type="text" id="grade10"></td>
+				<td><input type="text" id="point10"></td>
+				<td><input type="button" value="Get Result" onclick="result10()"></td>
+			</tr>
+			<tr>
+				<td colspan="5">Final Result</td>
+				<td><input type="text" id="totalMark"></td>
+				<td><input type="text" id="totalgrade"></td>
+				<td><input type="text" id="totalpoin"></td>
+				<td><input type="button" value="Get Result" onclick="finalResult()"></td>
+			</tr>
+		</table>
+
+
+	<script src="script.js"></script>
+</body>
+</html>
